@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Animated, Easing, Image, ImageBackground, StyleSheet } from "react-native";
+import { Animated, Easing, Image, ImageBackground, StatusBar, StyleSheet } from "react-native";
 import Images from "../../res/styles/Images";
 import { ResponsivePixels } from "../../res/styles/ResponsivePixels";
 
@@ -50,6 +50,8 @@ const JugglingHead = () => {
   };
 
   return (
+    <>
+      <StatusBar hidden/>
     <ImageBackground source={Images.ic_football_ground} style={styles.container}>
       <Animated.View
           style={[
@@ -61,6 +63,7 @@ const JugglingHead = () => {
 
       <Image source={Images.ic_ronaldo} style={styles.ronaldoImage} />
     </ImageBackground>
+    </>
   );
 };
 
