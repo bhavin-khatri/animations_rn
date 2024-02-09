@@ -2,6 +2,7 @@ export const Colors = {
   PureBlack: '#000000',
   defaultBlack:'#000000',
   defaultWhite:'#ffffff',
+  snakeBoard:"#22292f",
   defaultGray:'#939292',
   shadeGray:'#96939E',
   primaryColor:'#261E3C',
